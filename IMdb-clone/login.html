@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Login</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  
+      <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+
+<!-- Custom styles for this template -->
+<link href="carousel.css" rel="stylesheet">
+</head>
+
+<body background="./movies/5/aboutusimage.jpg">
+    
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">FLICKS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="aboutus.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="signup.html" tabindex="-1">Sign up</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+<!-- login form -->
+<div class="login">
+      
+    <form action="success.html" class="col-lg-5-signin" onsubmit="return validation()">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" placeholder="Enter Email ID" class="form-control" id="email_signin" required onchange = "return emailcheck()" aria-describedby="emailHelp">
+        <label for="error" class="form-label" id="error_email_signin"></label>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" placeholder="Enter Password" class="form-control" id="password_signin" required onchange = "return passwordcheck()">
+        <label for="error" class="form-label" id="error_password_signin"></label>
+      </div>
+      <div class="mb-3">
+        <a href="signup.html">No account? Create one right away</a>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  
+<div class="col-md-4"></div>  
+<script src="./js/Login_validate.js"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ <!-- FOOTER -->
+ <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2021 THT Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
